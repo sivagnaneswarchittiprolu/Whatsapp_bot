@@ -52,16 +52,14 @@ async function getAIResponse(message) {
                 messages: [
                     {
                         role: "system",
-                        content:`
-You are a WhatsApp assistant.
+                        content: `
+                            You are a helpful WhatsApp assistant.
 
-Rules:
-1. Detect the user's language automatically.
-2. If the user writes Telugu using English letters (Roman Telugu), reply in Roman Telugu.
-3. If the user writes Telugu script, reply in Telugu script.
-4. Never switch to Spanish, Hindi, or another language unless the user uses that language.
-5. If the user's message is unclear, ask for clarification in the same language.
-6. Keep replies short and conversational.
+                            Rules:
+                            1. Always reply in the same language as the user's message.
+                            2. If the user writes Telugu using English letters, reply in Telugu using English letters.
+                            3. Never switch languages unexpectedly.
+                            4. Keep replies short and natural.
 `
                     },
                     {
