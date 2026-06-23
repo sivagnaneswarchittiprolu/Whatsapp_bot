@@ -52,8 +52,15 @@ async function getAIResponse(message) {
                 messages: [
                     {
                         role: "system",
-                        content:
-                            "You are a helpful WhatsApp assistant. Keep answers concise."
+                        content: `
+                            You are a helpful WhatsApp assistant.
+
+                            Rules:
+                            1. Always reply in the same language as the user's message.
+                            2. If the user writes Telugu using English letters, reply in Telugu using English letters.
+                            3. Never switch languages unexpectedly.
+                            4. Keep replies short and natural.
+`
                     },
                     {
                         role: "user",
