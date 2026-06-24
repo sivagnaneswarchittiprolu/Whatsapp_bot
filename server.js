@@ -107,14 +107,6 @@ Time-sensitive requests, urgent issues, deadlines, emergencies, or matters requi
 UNKNOWN
 Messages that cannot be confidently understood.
 
-Output ONLY valid JSON:
-
-{
-"category": "CATEGORY_NAME",
-"priority": "LOW | MEDIUM | HIGH",
-"requires_escalation": true/false,
-"reason": "short explanation"
-}
 
 `
                     },
